@@ -10,6 +10,25 @@ var employees = [
 
 // Part 2 Answer Here
 
+const sortedEmployees = (employeesArr) => {
+    return employeesArr.reduce((sortedEmployees, employee) => {
+      let employeeName = "";
+  
+      if (employee.nameOrder === "reverse") {
+        employeeName += employee.last + " " + employee.first;
+      } else {
+        employeeName += employee.first + " " + employee.last;
+      }
+  
+      if (!sortedEmployees[employee.group]) {
+        sortedEmployees[employee.group] = [employeeName];
+      } else {
+        sortedEmployees[employee.group].push(employeeName);
+      }
+      return sortedEmployees;
+    }, {});
+  }
+
 /*****************************************************************************************
 * Bonus
 ****************************************************************************************/
