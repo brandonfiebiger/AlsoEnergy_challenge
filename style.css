@@ -1,3 +1,59 @@
 body {
-    background: #3F3939;
+    
+    margin: 0;
 }
+
+header {
+    background: #3F3939;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+nav {
+    background: #A999A9;
+    height: 70vh;
+    width: 20%;
+}
+
+main {
+    background: #EBEAED;
+    height: 70vh;
+    width: 80%;
+    float: right;
+
+}
+
+footer {
+    height: 15vh;
+    background: #3F3939;    
+}
+
+img {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+h1 {
+    margin: 0;
+    color: 	#C0C0C0;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    main {
+        float: none;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+}
+
